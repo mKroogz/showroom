@@ -1,0 +1,15 @@
+showroom = set()
+showroom.add("Mustang")
+showroom.add("Camaro")
+showroom.add("Cybertruck")
+showroom.add("Range Rover")
+print(len(showroom))
+showroom.add("Range Rover")
+print(showroom)
+showroom.update(["Batmobile", "Rusted F-150"])
+showroom.discard("Range Rover")
+
+junkyard = {"Rusted F-150", "Camaro", "Grand Caravan", "Magic School Bus"}
+print(showroom.intersection(junkyard))
+showroom = showroom.union(junkyard)
+showroom.discard("Rusted F-150")
